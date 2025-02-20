@@ -1,5 +1,5 @@
 {
-  "name": "cjb-starter-vite-react",
+  "name": "crypto-price",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,6 +20,10 @@
     "#design": "./src/shared/design/index.ts"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.5",
+    "@tanstack/react-query": "^5.66.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

@@ -64,5 +64,5 @@ export default tseslint.config(
       "import/no-absolute-path": "error",
       "import/no-useless-path-segments": "error",
     },
-  }
+  },
 )
