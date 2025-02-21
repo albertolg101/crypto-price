@@ -12,7 +12,11 @@ export function CryptoSymbolExplorer(): React.JSX.Element {
         defaultValue={symbol}
         options={availableSymbols}
         renderInput={(params) => (
-          <TextField {...params} label="Select a fruit" variant="outlined" />
+          <TextField
+            {...params}
+            label="Select a crypto symbol"
+            variant="outlined"
+          />
         )}
         onChange={(_, value) => {
           if (value !== null) {
