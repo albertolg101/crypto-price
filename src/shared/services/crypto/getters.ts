@@ -1,5 +1,5 @@
 const baseURL = "https://api.api-ninjas.com/v1"
-const API_NINJAS_KEY = "qNZH2jDylYxhxKEJjnjIdg==pfFzBTqrsbX997yu"
+const API_NINJAS_KEY = import.meta.env.VITE_API_NINJAS_KEY as string
 
 export async function getCryptoSymbols(): Promise<string[]> {
   const url = new URL(`${baseURL}/cryptosymbols`)
