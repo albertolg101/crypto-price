@@ -3,13 +3,12 @@ import { Autocomplete, FormControl, TextField } from "@mui/material"
 import { useCryptoSymbol } from "#shared/cryptoSymbolContext"
 
 export function CryptoSymbolExplorer(): React.JSX.Element {
-  const { symbol, availableSymbols, setSymbol } = useCryptoSymbol()
+  const { availableSymbols, setSymbol } = useCryptoSymbol()
   const [error, setError] = React.useState(false)
 
   return (
     <FormControl error={error}>
       <Autocomplete
-        defaultValue={symbol}
         options={availableSymbols}
         renderInput={(params) => (
           <TextField
